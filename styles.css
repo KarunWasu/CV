@@ -1,0 +1,294 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+section {
+    padding-top: 100px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+nav {
+    background: linear-gradient(90deg, #2980b9, #6dd5fa);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo h2 {
+    text-align: center;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 25px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #34495e;
+    transform: scale(1.1);
+}
+
+
+.intro-section {
+    background: linear-gradient(to right, #3498db, #6dd5fa);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 20px;
+    margin-bottom: 40px;
+    flex-wrap: wrap; 
+}
+
+.intro-section .text-content {
+    max-width: 60%;
+}
+
+.intro-section h1 {
+    font-size: 4rem;
+    margin-bottom: 30px;
+    margin-left: 200px;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.intro-section p {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+    margin-left: 200px;
+}
+
+.cta-button {
+    margin-left: 200px;
+}
+
+.header-image {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 200px;
+    flex-shrink: 0;
+}
+
+
+#minusta, #koulutus, #tyokokemus, #taidot, #portfolio, #yhteystiedot {
+    padding: 60px 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#minusta h2, #koulutus h2, #tyokokemus h2, #taidot h2, #portfolio h2, #yhteystiedot h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #2980b9;
+}
+
+#minusta p, #koulutus ul, #tyokokemus ul, #taidot ul, #portfolio p, #yhteystiedot ul {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+#minusta p {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+}
+
+
+#koulutus ul, #tyokokemus ul, #taidot ul, #yhteystiedot ul {
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+#koulutus li, #tyokokemus li, #taidot li {
+    margin-bottom: 15px;
+}
+
+#koulutus li strong, #tyokokemus li strong, #taidot li strong {
+    color: #2980b9;
+}
+
+
+#portfolio {
+    padding: 80px 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.portfolio-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.portfolio-images img {
+    width: 30%;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-images img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+
+#yhteystiedot {
+    padding: 60px 20px;
+    background-color: #f4f6f9;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#yhteystiedot ul {
+    list-style: none;
+    margin-bottom: 30px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+#yhteystiedot li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #555;
+    text-align: center;
+}
+
+.cta-button {
+    background-color: #2980b9;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.cta-button:hover {
+    background-color: #1d5bb9;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #2980b9;
+    color: white;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .intro-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 20px;
+    }
+
+    .intro-section h1 {
+        font-size: 3rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .intro-section p {
+        font-size: 1.2rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .cta-button {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .header-image {
+        width: 200px;
+        height: 200px;
+        margin-right: 0;
+    }
+
+    .portfolio-images img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .portfolio-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #minusta, #koulutus, #tyokokemus, #taidot, #portfolio, #yhteystiedot {
+        padding: 40px 20px;
+    }
+
